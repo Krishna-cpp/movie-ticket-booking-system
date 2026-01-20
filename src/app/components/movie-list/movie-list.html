@@ -1,0 +1,8 @@
+<h2>Now Showing Movies</h2>
+
+<div class="movie-card" *ngFor="let movie of movies">
+  <h3>{{ movie.title }}</h3>
+  <p><strong>Genre:</strong> {{ movie.genre }}</p>
+  <p><strong>Duration:</strong> {{ movie.duration }} minutes</p>
+  <p><strong>Rating:</strong> {{ movie.rating }}/10</p>
+</div>
