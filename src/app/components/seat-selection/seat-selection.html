@@ -1,1 +1,32 @@
-<p>seat-selection works!</p>
+<div class="container">
+
+<h2>Select Seats</h2>
+
+<div class="screen">SCREEN</div>
+
+<div *ngFor="let row of rows" class="seat-row">
+
+<button
+*ngFor="let col of cols"
+(click)="toggleSeat(row,col)"
+[class.selected]="selectedSeats.includes(row+col)"
+[class.unavailable]="unavailableSeats.includes(row+col)"
+[disabled]="unavailableSeats.includes(row+col)"
+>
+
+{{row}}{{col}}
+
+</button>
+
+</div>
+
+<button
+class="confirm"
+(click)="confirmBooking()"
+[routerLink]="'/summary'">
+
+Confirm Booking
+
+</button>
+
+</div>

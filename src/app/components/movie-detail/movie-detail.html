@@ -1,1 +1,31 @@
-<p>movie-detail works!</p>
+<div class="container" *ngIf="movie">
+
+<div class="movie-detail-card">
+
+<div class="poster-section">
+<img [src]="movie.poster" alt="{{movie.title}}">
+</div>
+
+<div class="info-section">
+
+<h1>{{movie.title}}</h1>
+
+<p class="genre">{{movie.genre}}</p>
+
+<p class="rating">⭐ {{movie.rating}}</p>
+
+<p class="duration">Duration: {{movie.duration}} minutes</p>
+
+<p class="description">
+{{movie.description}}
+</p>
+
+<button routerLink="/showtimes">
+View Showtimes
+</button>
+
+</div>
+
+</div>
+
+</div>

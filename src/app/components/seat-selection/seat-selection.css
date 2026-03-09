@@ -1,0 +1,48 @@
+.screen{
+background:#e5e7eb;
+color:black;
+padding:10px;
+text-align:center;
+margin-bottom:20px;
+border-radius:6px;
+font-weight:bold;
+}
+
+.seat-row{
+display:flex;
+gap:10px;
+justify-content:center;
+margin-bottom:10px;
+}
+
+.seat-row button{
+width:55px;
+height:45px;
+border:none;
+border-radius:6px;
+background:#9ca3af;
+color:white;
+cursor:pointer;
+font-weight:bold;
+}
+
+.seat-row button.selected{
+background:#3b82f6;
+}
+
+.seat-row button.unavailable{
+background:#ef4444;
+cursor:not-allowed;
+}
+
+.confirm{
+display:block;
+margin:30px auto;
+padding:12px 20px;
+background:#22c55e;
+border-radius:6px;
+font-size:16px;
+color:white;
+width:200px;
+text-align:center;
+}

@@ -1,1 +1,21 @@
-<p>showtime-list works!</p>
+<div class="container">
+
+<h2>Select Showtime</h2>
+
+<div class="showtime-grid">
+
+<div class="showtime-card" *ngFor="let show of showtimes">
+
+<h3>{{show.time}}</h3>
+
+<p>{{show.theatre}}</p>
+
+<button [routerLink]="['/seats', show.id]">
+Select Seats
+</button>
+
+</div>
+
+</div>
+
+</div>

@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { MovieList } from './movie-list';
 
 describe('MovieList', () => {
@@ -9,12 +8,11 @@ describe('MovieList', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [MovieList]
-    })
-    .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(MovieList);
     component = fixture.componentInstance;
-    await fixture.whenStable();
+    fixture.detectChanges();
   });
 
   it('should create', () => {

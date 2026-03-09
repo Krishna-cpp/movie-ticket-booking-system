@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { Navbar } from './components/navbar/navbar';
-import { MovieList } from './components/movie-list/movie-list';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Navbar, MovieList],
+  imports: [RouterOutlet, Navbar],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })

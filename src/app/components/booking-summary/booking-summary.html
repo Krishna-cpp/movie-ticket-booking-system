@@ -1,1 +1,30 @@
-<p>booking-summary works!</p>
+<div class="container">
+
+<div class="ticket">
+
+<h2>🎬 Booking Confirmed</h2>
+
+<div class="ticket-info">
+
+<p><strong>Movie:</strong> {{ movieName }}</p>
+<p><strong>Showtime:</strong> {{ showtime }}</p>
+
+<p><strong>Seats:</strong></p>
+
+<div class="seat-list">
+<span *ngFor="let seat of seats">{{seat}}</span>
+</div>
+
+</div>
+
+<div class="ticket-footer">
+Enjoy your movie! 🍿
+</div>
+
+<button routerLink="/movies" class="back-btn">
+Book Another Movie
+</button>
+
+</div>
+
+</div>

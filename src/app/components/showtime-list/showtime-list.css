@@ -1,0 +1,27 @@
+.showtime-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.showtime-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+text-align:center;
+transition:transform .2s;
+}
+
+.showtime-card:hover{
+transform:scale(1.05);
+}
+
+.showtime-card h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.showtime-card p{
+color:#9ca3af;
+margin-bottom:15px;
+}
