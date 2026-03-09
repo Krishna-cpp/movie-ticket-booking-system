@@ -31,17 +31,19 @@ The application allows users to browse movies, view showtimes, select seats, and
 
 📂 Project Structure
 
-src/
-  app/
-    components/
-      movie-list/
-      movie-detail/
-      showtime-list/
-      seat-selection/
-      booking-summary/
-      navbar/
-    services/
-      movie.service.ts
+```src/
+└── app/
+├── components/
+│ ├── movie-list/
+│ ├── movie-detail/
+│ ├── showtime-list/
+│ ├── seat-selection/
+│ ├── booking-summary/
+│ └── navbar/
+│
+└── services/
+└── movie.service.ts
+```
 
 --------------------------------------------------
 
